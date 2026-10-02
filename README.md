@@ -44,6 +44,28 @@ CarBazaar is a modern car buying and selling marketplace planned as a full-stack
 | [18_DEPLOYMENT_PLAN](docs/18_DEPLOYMENT_PLAN.md) | Future deployment |
 | [19_GITHUB_WORKFLOW](docs/19_GITHUB_WORKFLOW.md) | Git workflow |
 | [20_DEVELOPMENT_ROADMAP](docs/20_DEVELOPMENT_ROADMAP.md) | Development phases |
+| [21_TEAM_TASK_ASSIGNMENT](docs/21_TEAM_TASK_ASSIGNMENT.md) | Team task assignment and issue matrix |
+| [22_TEAM_GIT_WORKFLOW](docs/22_TEAM_GIT_WORKFLOW.md) | 4-member Git & GitHub development workflow |
+
+## Team Members & Responsibilities
+
+| Member | Branch | Primary Responsibility |
+|---|---|---|
+| **Ashutosh** | `feature/ashutosh-auth` | **Authentication + User Management + Backend Foundation** (Express, MongoDB, JWT, bcrypt, OTP lifecycle, security middleware) |
+| **Pradnya** | `feature/pradnya-ui` | **Frontend + UI/UX + Home + Car Browsing** (React/Vite, Tailwind CSS, Navbar, Footer, Car Cards, Browse Cars, UI states) |
+| **Sakshi** | `feature/sakshi-marketplace` | **Car Marketplace + Sell Car + Listings + Buyer/Seller Features** (Sell car form, image upload, My Listings, Favorites, Inquiries) |
+| **Prashant** | `feature/prashant-admin` | **Admin Panel + Notifications + QA + Testing** (Admin dashboard, moderation, brands, notifications, security & regression testing) |
+
+## Team Development Workflow
+
+1. Each member works on a separate feature branch.
+2. No direct development on main.
+3. Members commit and push to their branches.
+4. Completed work is submitted through Pull Requests.
+5. Another member reviews the Pull Request.
+6. Approved work is merged into main.
+7. Everyone pulls the latest main before continuing.
+8. Final integration and testing happen before deployment.
 
 ## Phase 1 Acceptance
 
@@ -55,3 +77,4 @@ CarBazaar is a modern car buying and selling marketplace planned as a full-stack
 ## Planned Application
 
 The eventual application will allow verified customers to browse cars, search and filter listings, view car details, sell cars, manage listings, save favorites and contact sellers. Admins will manage users, brands, listings, approvals and reports.
+
