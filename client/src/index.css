@@ -1,0 +1,220 @@
+/* ==========================================================================
+   CarBazaar Design System & Global UI States Styling
+   Theme: Modern Automotive Marketplace (Navy, Slate, Electric Blue, Cyan)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Brand Primary & Accents */
+  --cb-primary: #2563EB;
+  --cb-primary-hover: #1D4ED8;
+  --cb-primary-light: rgba(37, 99, 235, 0.12);
+  --cb-primary-glow: rgba(37, 99, 235, 0.35);
+
+  --cb-cyan: #06B6D4;
+  --cb-cyan-hover: #0891B2;
+  --cb-cyan-light: rgba(6, 182, 212, 0.12);
+
+  /* Status Colors */
+  --cb-success: #10B981;
+  --cb-success-hover: #059669;
+  --cb-success-bg: rgba(16, 185, 129, 0.1);
+  --cb-success-border: rgba(16, 185, 129, 0.3);
+
+  --cb-warning: #F59E0B;
+  --cb-warning-hover: #D97706;
+  --cb-warning-bg: rgba(245, 158, 11, 0.1);
+  --cb-warning-border: rgba(245, 158, 11, 0.3);
+
+  --cb-error: #EF4444;
+  --cb-error-hover: #DC2626;
+  --cb-error-bg: rgba(239, 68, 68, 0.1);
+  --cb-error-border: rgba(239, 68, 68, 0.3);
+
+  --cb-info: #3B82F6;
+  --cb-info-bg: rgba(59, 130, 246, 0.1);
+  --cb-info-border: rgba(59, 130, 246, 0.3);
+
+  /* Dark Theme Surfaces (Default Automotive Theme) */
+  --cb-bg-main: #0B0F19;
+  --cb-bg-subtle: #111827;
+  --cb-bg-card: #1E293B;
+  --cb-bg-card-hover: #243248;
+  --cb-bg-input: #151D2C;
+  --cb-border-subtle: rgba(255, 255, 255, 0.08);
+  --cb-border-medium: rgba(255, 255, 255, 0.15);
+  --cb-border-highlight: rgba(37, 99, 235, 0.4);
+
+  /* Text Colors */
+  --cb-text-primary: #F8FAFC;
+  --cb-text-secondary: #94A3B8;
+  --cb-text-muted: #64748B;
+  --cb-text-inverse: #0B0F19;
+
+  /* Typography */
+  --cb-font-heading: 'Outfit', sans-serif;
+  --cb-font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --cb-font-mono: 'JetBrains Mono', monospace;
+
+  /* Shadows */
+  --cb-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  --cb-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.35), 0 2px 4px -2px rgba(0, 0, 0, 0.25);
+  --cb-shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.5), 0 4px 10px -4px rgba(0, 0, 0, 0.3);
+  --cb-shadow-xl: 0 20px 30px -10px rgba(0, 0, 0, 0.65), 0 0 20px 2px var(--cb-primary-glow);
+  --cb-shadow-toast: 0 12px 35px -4px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.1);
+
+  /* Radius */
+  --cb-radius-sm: 6px;
+  --cb-radius-md: 10px;
+  --cb-radius-lg: 16px;
+  --cb-radius-xl: 24px;
+  --cb-radius-full: 9999px;
+
+  /* Transitions */
+  --cb-transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cb-transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --cb-transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light Mode Overrides (Optional / Toggleable) */
+[data-theme='light'] {
+  --cb-bg-main: #F8FAFC;
+  --cb-bg-subtle: #F1F5F9;
+  --cb-bg-card: #FFFFFF;
+  --cb-bg-card-hover: #F8FAFC;
+  --cb-bg-input: #F1F5F9;
+  --cb-border-subtle: #E2E8F0;
+  --cb-border-medium: #CBD5E1;
+  --cb-border-highlight: rgba(37, 99, 235, 0.5);
+
+  --cb-text-primary: #0F172A;
+  --cb-text-secondary: #475569;
+  --cb-text-muted: #94A3B8;
+  --cb-text-inverse: #FFFFFF;
+
+  --cb-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --cb-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+  --cb-shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
+  --cb-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --cb-shadow-toast: 0 12px 30px -4px rgba(0, 0, 0, 0.18), 0 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--cb-font-body);
+  background-color: var(--cb-bg-main);
+  color: var(--cb-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--cb-font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--cb-text-primary);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Animations */
+@keyframes cb-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cb-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes cb-pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+@keyframes cb-toast-enter-right {
+  from {
+    opacity: 0;
+    transform: translateX(110%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes cb-toast-exit-right {
+  from {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    max-height: 140px;
+    margin-bottom: 12px;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(110%) scale(0.9);
+    max-height: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@keyframes cb-toast-enter-left {
+  from {
+    opacity: 0;
+    transform: translateX(-110%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes cb-toast-enter-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cb-toast-enter-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes cb-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cb-scale-up {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
