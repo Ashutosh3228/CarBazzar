@@ -1,0 +1,28 @@
+{
+  "name": "carbazzar",
+  "version": "1.0.0",
+  "description": "CarBazaar is a modern car buying and selling marketplace planned as a full-stack MERN application.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "node tests/brand.model.test.js && node tests/notification.model.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashutosh3228/CarBazzar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ashutosh3228/CarBazzar/issues"
+  },
+  "homepage": "https://github.com/Ashutosh3228/CarBazzar#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.10.3"
+  }
+}
