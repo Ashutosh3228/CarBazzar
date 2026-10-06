@@ -1,0 +1,13 @@
+{
+  "name": "carbazaar-server",
+  "version": "1.0.0",
+  "description": "CarBazaar MERN Backend API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test:model": "node test/user.model.test.js"
+  },
+  "dependencies": {
+    "mongoose": "^8.13.0"
+  }
+}
